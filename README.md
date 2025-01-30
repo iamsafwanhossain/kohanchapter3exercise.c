@@ -1,1 +1,0 @@
-# kohanchapter3exercise.c
