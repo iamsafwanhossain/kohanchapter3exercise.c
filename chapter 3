@@ -1,0 +1,22 @@
+// write a program to evaluate the polynomial shown here  3x^3 - 5x^2 +6  in c language
+
+#include <stdio.h>
+
+// Function to evaluate the polynomial 3x^3 - 5x^2 + 6
+double evaluatePolynomial(double x) {
+    return (3 * x * x * x) - (5 * x * x) + 6;
+}
+
+int main() {
+    double x;
+    
+    // Prompt user for input
+    printf("Enter the value of x: ");
+    scanf("%lf", &x);
+    
+    // Evaluate and display the result
+    double result = evaluatePolynomial(x);
+    printf("The value of the polynomial at x = %.2f is: %.2f\n", x, result);
+    
+    return 0;
+}
